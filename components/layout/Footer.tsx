@@ -13,8 +13,8 @@ export default function Footer() {
             <div className="flex items-center gap-4 mb-5">
               <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-paper rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
-                  src="/doms-painting-logo.png"
-                  alt="Priceys Roof Painting logo"
+                  src="/surrey-roofing-logo.png"
+                  alt="The Surrey Roofing Company logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,18 +22,18 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  Priceys Roof Painting
+                  The Surrey Roofing Company
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Roof restoration · Roof painting · Roof repairs
+                  Roof repairs · Chimney work · Lead flashing
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Roof restoration and painting in Nelson Bay and surrounding areas.
+              Roof repairs, chimney work and restoration in Croydon and nearby areas.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <a href="tel:+61434242175" className="hover:text-paper">+61 434 242 175</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Priceys Roof Painting</a>}
+              <a href="tel:+447729174423" className="hover:text-paper">+44 7729 174423</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">The Surrey Roofing Company</a>}
               {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
                 Roofing services
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Planning roof work? Call Priceys Roof Painting.
+                Planning roof work? Call The Surrey Roofing Company.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -90,12 +90,12 @@ export default function Footer() {
           {/* Column 2: technical Team */}
           <div className="col-span-1">
             <span className="font-body text-13 text-paper/40 uppercase tracking-wider block mb-4 font-semibold">
-              Our team
+              Meet the team
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
                 <Link href="/equipe/" className="text-paper/80 hover:text-lime transition-colors">
-                  Meet Harley at Priceys Roof Painting
+                  Meet Mark at The Surrey Roofing Company
                 </Link>
               </li>
               {DENTISTS.map((d) => (
@@ -129,7 +129,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/dicas/" className="text-paper/80 hover:text-lime transition-colors">
-                  Painting advice
+                  Roofing advice
                 </Link>
               </li>
               <li>
@@ -183,7 +183,7 @@ export default function Footer() {
             © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-paper">Priceys Roof Painting</a>
+            <a href="/" className="hover:text-paper">The Surrey Roofing Company</a>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ export default function HomeFinalCTA() {
 
         <AnimateOnScroll animation="fade-up" duration={0.85} delay={0.15}>
           <p className="font-body text-17 md:text-21 text-paper/80 leading-relaxed max-w-xl mb-10 mx-auto">
-            Contact Priceys Roof Painting to discuss your project and availability.
+            Contact The Surrey Roofing Company to discuss your project and availability.
           </p>
         </AnimateOnScroll>
 

@@ -71,13 +71,13 @@ export default function ProcedurePin({
           <div className="hidden lg:block lg:col-span-5">
             <div className="sticky top-28 p-8 bg-paper border border-mist">
               <span className="font-body text-13 text-forest uppercase tracking-wider block mb-2 font-medium">
-                Etapa atual {activeStep + 1} de {steps.length}
+                Step {activeStep + 1} of {steps.length}
               </span>
               <h3 className="font-display text-26 md:text-33 text-forest-ink mb-4">
                 {steps[activeStep]?.title}
               </h3>
               <div className="inline-block bg-mist/60 px-3 py-1 text-13 font-body text-forest-ink/80 mb-6">
-                Duração estimada: {steps[activeStep]?.duration}
+                Estimated duration: {steps[activeStep]?.duration}
               </div>
               <p className="font-body text-15 text-forest-ink/80 leading-relaxed mb-6">
                 {steps[activeStep]?.clinicalDetails}

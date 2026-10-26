@@ -18,7 +18,7 @@ export function createMetadata({
 }): Metadata {
   const url = `${BASE_URL}${pathname}`;
   const fullTitle = `${title} | ${CLINIC_INFO.name}`;
-  const defaultImage = `${BASE_URL}/priceys-roof-painting-logo.png`;
+  const defaultImage = `${BASE_URL}/surrey-roofing-logo.png`;
 
   return {
     title: fullTitle,
@@ -31,7 +31,7 @@ export function createMetadata({
       description,
       url,
       siteName: CLINIC_INFO.name,
-      locale: 'en_AU',
+      locale: 'en_GB',
       type: 'website',
       images: [
         {
@@ -65,7 +65,7 @@ export function createMetadata({
 export function generateLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'HousePainter',
+    '@type': 'RoofingContractor',
     '@id': `${BASE_URL}/#business`,
     name: CLINIC_INFO.name,
     legalName: CLINIC_INFO.legalName,
@@ -110,7 +110,7 @@ export function generateServiceSchema(serviceName: string, description: string, 
     '@type': 'Service',
     name: serviceName,
     description: description,
-    serviceType: 'Roof restoration and roof painting',
+    serviceType: 'Roof repairs, chimney work and roof restoration',
     url: `${BASE_URL}${url}`,
     provider: {
       '@type': 'LocalBusiness',

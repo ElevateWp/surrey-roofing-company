@@ -27,17 +27,17 @@ export default function Demo(props: Partial<typeof settings>) {
       <style>{`
         [data-slipstream-demo] [data-gp-caption]{inset:calc(var(--gp-word-bottom,50%) + 82px) 24px auto;justify-content:center;}
         [data-slipstream-demo] [data-gp-hint]{display:none;}
-        [data-slipstream-demo] [data-gp-enter]{min-height:46px;padding:0 20px;gap:28px;background:#F5F5F5;border:1px solid #171717;border-radius:10px;color:#FFFFFF;font-size:13px;font-weight:500;box-shadow:0 1px 2px #1717171a;transition:background .18s,box-shadow .18s;}
-        [data-slipstream-demo] [data-gp-enter]:hover{background:#555555;box-shadow:0 3px 8px #17171718;}
-        [data-slipstream-demo] [data-gp-enter]:focus-visible{outline:2px solid #555555;outline-offset:4px;}
+        [data-slipstream-demo] [data-gp-enter]{min-height:46px;padding:0 20px;gap:28px;background:#F8F6F2;border:1px solid #252122;border-radius:10px;color:#FFFFFF;font-size:13px;font-weight:500;box-shadow:0 1px 2px #2521221a;transition:background .18s,box-shadow .18s;}
+        [data-slipstream-demo] [data-gp-enter]:hover{background:#E0B45F;box-shadow:0 3px 8px #25212218;}
+        [data-slipstream-demo] [data-gp-enter]:focus-visible{outline:2px solid #E0B45F;outline-offset:4px;}
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
-        [data-slipstream-demo] [data-gp-select]{border-color:transparent;border-radius:8px;font-size:12px;color:#666666;}
+        [data-slipstream-demo] [data-gp-select]{border-color:transparent;border-radius:8px;font-size:12px;color:#6B625B;}
         [data-sublime-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;}
-        [data-sublime-logo]{font-size:19px;font-weight:600;letter-spacing:-.065em;color:#171717;}
-        [data-sublime-category]{font-size:12px;line-height:1.5;color:#666666;}
-        [data-sublime-eyebrow]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;text-align:center;font-size:13px;font-weight:400;line-height:1.5;letter-spacing:.005em;color:#666666;}
-        [data-sublime-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0;text-align:center;font-size:16px;font-weight:400;line-height:1.5;color:#666666;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#666666;font-size:11px;letter-spacing:.01em;}
+        [data-sublime-logo]{font-size:19px;font-weight:600;letter-spacing:-.065em;color:#252122;}
+        [data-sublime-category]{font-size:12px;line-height:1.5;color:#6B625B;}
+        [data-sublime-eyebrow]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;text-align:center;font-size:13px;font-weight:400;line-height:1.5;letter-spacing:.005em;color:#6B625B;}
+        [data-sublime-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0;text-align:center;font-size:16px;font-weight:400;line-height:1.5;color:#6B625B;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#6B625B;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){[data-sublime-category]{max-width:12ch;text-align:right;}[data-sublime-eyebrow]{font-size:12px;}[data-sublime-support]{font-size:14px;}[data-slipstream-demo] [data-gp-caption]{top:calc(var(--gp-word-bottom,50%) + 76px);}}
         @container(max-height:479px){[data-sublime-header]{top:18px;}[data-sublime-support]{top:calc(var(--gp-word-bottom,50%) + 16px);}[data-slipstream-demo] [data-gp-caption]{top:calc(var(--gp-word-bottom,50%) + 60px);}[data-sublime-scroll]{display:none;}}
@@ -52,17 +52,17 @@ export default function Demo(props: Partial<typeof settings>) {
         [data-slipstream-no]{display:inline-block;margin-right:.7rem;color:rgba(251,251,250,.85);font:500 .75rem ui-monospace,monospace;letter-spacing:.08em;transform:translateY(-.1em);}
         @container(min-width:768px){[data-slipstream-features]{grid-template-columns:repeat(3,minmax(0,1fr));gap:3.5rem;}}
       `}</style>
-      {face ? <GlyphPortal word={s.word} fontFamily={face} fontWeight={700} style={{ fontFamily: face }} scrollLength={s.scrollLength} interactive={s.interactive} annotations={s.annotations} enterLabel="Conheça a Priceys Roof Painting" front={<>
-          <div data-sublime-header><span data-sublime-logo>Priceys Roof Painting</span><span data-sublime-category>Construção e reforma</span></div>
+      {face ? <GlyphPortal word={s.word} fontFamily={face} fontWeight={700} style={{ fontFamily: face }} scrollLength={s.scrollLength} interactive={s.interactive} annotations={s.annotations} enterLabel="Meet The Surrey Roofing Company" front={<>
+          <div data-sublime-header><span data-sublime-logo>The Surrey Roofing Company</span><span data-sublime-category>Roofing and restoration</span></div>
           <p data-sublime-eyebrow>Um novo olhar para transformar sua casa.</p>
-          <p data-sublime-support>Conheça nosso trabalho.</p>
+          <p data-sublime-support>Explore our work.</p>
           <span data-sublime-scroll>Scroll to explore ↓</span>
         </>}>
         <div data-slipstream-copy>
           <h2>Cuidado em cada etapa do seu project.</h2>
           <div data-slipstream-features>
-            <div data-slipstream-feature><h3><span data-slipstream-no>01</span>Escolha por onde começar</h3><p>Escolha uma letra e role a página para conhecer cada etapa.</p></div>
-            <div data-slipstream-feature><h3><span data-slipstream-no>02</span>Conheça as possibilidades</h3><p>Cada project começa com uma conversa sobre o que você precisa.</p></div>
+            <div data-slipstream-feature><h3><span data-slipstream-no>01</span>Choose where to start</h3><p>Choose a letter and scroll to explore each step.</p></div>
+            <div data-slipstream-feature><h3><span data-slipstream-no>02</span>Explore the possibilities</h3><p>Every project starts with a conversation about what you need.</p></div>
             <div data-slipstream-feature><h3><span data-slipstream-no>03</span>Vamos conversar</h3><p>Conte sobre sua casa e sobre o service que deseja realizar.</p></div>
           </div>
         </div>

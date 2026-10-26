@@ -9,12 +9,12 @@ interface BreadcrumbsProps {
 }
 
 export default function Breadcrumbs({ items, className = '' }: BreadcrumbsProps) {
-  const fullItems = [{ name: 'Início', path: '/' }, ...items];
+  const fullItems = [{ name: 'Home', path: '/' }, ...items];
 
   return (
     <>
       <JsonLd data={generateBreadcrumbSchema(fullItems)} />
-      <nav aria-label="Navegação estrutural" className={`py-4 ${className}`}>
+      <nav aria-label="Breadcrumb" className={`py-4 ${className}`}>
         <ol className="flex items-center flex-wrap gap-2 font-body text-13 text-forest-ink/60">
           {fullItems.map((item, idx) => {
             const isLast = idx === fullItems.length - 1;

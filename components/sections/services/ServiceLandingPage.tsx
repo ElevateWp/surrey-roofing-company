@@ -28,7 +28,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
             <div className="lg:col-span-7">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="mb-3 block font-body text-13 font-medium uppercase tracking-wider text-brand">
-                  Priceys Roof Painting
+                  The Surrey Roofing Company
                 </span>
                 <WordRevealH1 text={service.name} />
                 <p className="mt-6 max-w-2xl font-body text-17 leading-relaxed text-forest-ink/85 md:text-21">
@@ -49,7 +49,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
               <div className="relative aspect-[4/3] overflow-hidden border border-mist bg-paper-secondary shadow-sm">
                 <Image src={photo} alt={`${service.name} project reference`} fill sizes="(max-width: 1024px) 100vw, 42vw" className="object-cover" />
               </div>
-              <p className="mt-2 font-body text-12 text-forest-light">Imagem ilustrativa</p>
+              <p className="mt-2 font-body text-12 text-forest-light">Project reference image</p>
             </AnimateOnScroll>
           </div>
         </div>
@@ -59,12 +59,12 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Your project</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Planejamento de {service.name.toLowerCase()} para seu imóvel</h2>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Planning {service.name.toLowerCase()} for your property</h2>
             <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-ink/80 md:text-17">{service.clinicalExplanation}</p>
           </AnimateOnScroll>
           <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="border border-mist bg-paper p-6 md:p-8">
-              <h3 className="mb-5 font-display text-21 text-forest-ink">Services que podemos conversar</h3>
+              <h3 className="mb-5 font-display text-21 text-forest-ink">Roofing work to discuss</h3>
               <ul className="space-y-3 font-body text-15 text-forest-ink/80">
                 {service.whoNeeds.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-greenAccent" />{item}</li>)}
               </ul>
@@ -82,8 +82,8 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="border-b border-mist py-16 md:py-24">
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
-            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Como funciona</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Da conversa inicial à conclusão</h2>
+            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">How it works</span>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">From first conversation to completion</h2>
           </AnimateOnScroll>
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {service.procedureSteps.map((step) => (
@@ -102,8 +102,8 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="border-b border-mist py-16 md:py-24">
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
-            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Quando entrar em contato</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Services que podemos conversar</h2>
+            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">When to get in touch</span>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Roofing work to discuss</h2>
             <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-light md:text-17">
               Tell us what you have noticed or what you are planning. We can talk through the property and help clarify suitable next steps for {service.name.toLowerCase()}.
             </p>
@@ -125,20 +125,20 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="border-b border-mist bg-paper-secondary py-16 md:py-24">
         <div className="mx-auto grid max-w-site grid-cols-1 gap-10 px-6 md:px-12 lg:grid-cols-12 lg:gap-16">
           <AnimateOnScroll animation="fade-right" className="lg:col-span-5">
-            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Quote e escopo do project</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Detalhes alinhados antes do início</h2>
+            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">Quotes and project scope</span>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Agreeing the details before work begins</h2>
             <p className="mt-4 font-body text-15 leading-relaxed text-forest-light md:text-17">{service.costTransparency.note}</p>
             <p className="mt-5 border-l-2 border-brand pl-4 font-body text-15 font-medium text-forest-ink">{service.costTransparency.baseRange}</p>
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" delay={0.1} className="grid gap-5 sm:grid-cols-2 lg:col-span-7">
             <div className="border border-mist bg-paper p-6 md:p-7">
-              <h3 className="mb-5 font-display text-21 text-forest-ink">Pontos que conversamos</h3>
+              <h3 className="mb-5 font-display text-21 text-forest-ink">Details to discuss</h3>
               <ul className="space-y-3 font-body text-15 leading-relaxed text-forest-ink/80">
                 {service.costTransparency.factors.map((factor) => <li key={factor} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand" />{factor}</li>)}
               </ul>
             </div>
             <div className="border border-mist bg-paper p-6 md:p-7">
-              <h3 className="mb-5 font-display text-21 text-forest-ink">O escopo do service inclui</h3>
+              <h3 className="mb-5 font-display text-21 text-forest-ink">The agreed scope</h3>
               <ul className="space-y-3 font-body text-15 leading-relaxed text-forest-ink/80">
                 {service.costTransparency.whatIsIncluded.map((item) => <li key={item} className="flex gap-3"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand" />{item}</li>)}
               </ul>
@@ -150,8 +150,8 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="border-b border-mist py-16 md:py-24">
         <div className="mx-auto max-w-site px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
-            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">O que esperar</span>
-            <h2 className="font-display text-33 text-forest-ink md:text-41">Antes, durante e depois do service</h2>
+            <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-forest-light">What to expect</span>
+            <h2 className="font-display text-33 text-forest-ink md:text-41">Before, during and after the work</h2>
             <p className="mt-4 max-w-3xl font-body text-15 leading-relaxed text-forest-light md:text-17">Every property and job is different. Contact us to discuss the details of your project.</p>
           </AnimateOnScroll>
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -181,7 +181,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
             </div>
             <AnimateOnScroll animation="fade-left" delay={0.1} className="bg-forest p-7 text-paper md:p-9 lg:col-span-5">
               <span className="mb-2 block font-body text-13 font-medium uppercase tracking-wider text-paper/65">Talk to our team</span>
-              <h3 className="font-display text-26">Uma conversa ajuda a planejar as próximas etapas.</h3>
+              <h3 className="font-display text-26">Let us talk through the next steps.</h3>
               <p className="mt-4 font-body text-15 leading-relaxed text-paper/75">Tell us what you need and discuss a quote for your property.</p>
               <div className="mt-7 flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
                 <Button href="/quote/" variant="paper" size="lg">Request a quote</Button>
@@ -217,7 +217,7 @@ export default function ServiceLandingPage({ slug }: { slug: string }) {
       <section className="bg-forest py-14 text-paper md:py-20">
         <div className="mx-auto flex max-w-site flex-col items-start justify-between gap-6 px-6 md:flex-row md:items-center md:px-12">
           <div>
-            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">Priceys Roof Painting</span>
+            <span className="mb-2 block font-body text-13 font-semibold uppercase tracking-wider text-paper/65">The Surrey Roofing Company</span>
             <h2 className="font-display text-26 md:text-33">Tell us what you need done.</h2>
           </div>
           <Link href="/quote/" className="inline-flex min-h-12 items-center justify-center bg-paper px-6 font-body text-15 font-semibold text-forest transition-colors hover:bg-softBlue">Request a quote</Link>

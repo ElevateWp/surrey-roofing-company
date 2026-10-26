@@ -108,7 +108,7 @@ export default function BeforeAfterSlider({
         }}
         tabIndex={0}
         role="slider"
-        aria-label="Comparação de imagens ilustrativas de services residenciais"
+        aria-label="Illustrative residential roofing project comparison"
         aria-valuenow={Math.round(sliderPos)}
         aria-valuemin={0}
         aria-valuemax={100}

@@ -5,19 +5,34 @@
 @layer base {
   :root {
     --paper: #FFFFFF; /* Main Background */
-    --paper-secondary: #F5F5F5; /* Secondary Background */
-    --forest: #080808; /* Deep Sections */
-    --forest-ink: #171717; /* Main Text */
-    --black-accent: #333333; /* Deep Blue */
-    --secondary-text: #666666; /* Secondary Text */
-    --primary-brand: #222222; /* Primary Brand / CTA */
-    --brand-hover: #555555; /* Hover / Highlight */
-    --navy-accent: #171717; /* Navy Blue Accent */
-    --soft-blue: #D9D9D9; /* Soft Blue */
-    --soft-orange: #D9D9D9; /* Soft Orange */
-    --lime: #222222;
-    --orange: #222222;
-    --mist: #DCDCDC; /* Borders */
+    --paper-secondary: #F8F6F2; /* Secondary Background */
+    --forest: #211F20; /* Deep Sections */
+    --forest-ink: #252122; /* Main Text */
+    --black-accent: #211F20; /* Deep Blue */
+    --secondary-text: #6B625B; /* Secondary Text */
+    --primary-brand: #C99A45; /* Primary Brand / CTA */
+    --brand-hover: #E0B45F; /* Hover / Highlight */
+    --gold-accent: #B88635;
+    --soft-gold: #E8D5A8;
+    --dark-section: #211F20;
+    --text-on-dark: #FFFFFF;
+    --gold-on-dark: #D4A64F;
+    --gold-accent: #B88635;
+    --soft-gold: #E8D5A8;
+    --dark-section: #211F20;
+    --text-on-dark: #FFFFFF;
+    --gold-on-dark: #D4A64F;
+    --gold-accent: #B88635;
+    --soft-gold: #E8D5A8;
+    --dark-section: #211F20;
+    --text-on-dark: #FFFFFF;
+    --gold-on-dark: #D4A64F;
+    --navy-accent: #211F20; /* Navy Blue Accent */
+    --soft-blue: #E8D5A8; /* Soft Blue */
+    --soft-orange: #E8D5A8; /* Soft Orange */
+    --lime: #C99A45;
+    --orange: #C99A45;
+    --mist: #E5DCCB; /* Borders */
     
     --font-display: "Instrument Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;

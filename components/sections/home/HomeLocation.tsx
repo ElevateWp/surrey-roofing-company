@@ -42,7 +42,7 @@ export default function HomeLocation() {
                 )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#F5F5F5] border border-[#DCDCDC] px-3 py-1.5 text-12 text-[#171717]">
+                    <span key={highlight} className="bg-[#F8F6F2] border border-[#E5DCCB] px-3 py-1.5 text-12 text-[#252122]">
                       {highlight}
                     </span>
                   ))}
@@ -88,13 +88,13 @@ export default function HomeLocation() {
               <div className="relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/roof-saffron-walden-1024x768-1.jpg"
-                  alt="Roof painting work"
+                  alt="Roof roofing work"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  Priceys Roof Painting
+                  The Surrey Roofing Company
                 </div>
               </div>
             </AnimateOnScroll>
@@ -106,10 +106,10 @@ export default function HomeLocation() {
                     Roofing services
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Roof restoration, repairs and cleaning
+                    Roof repairs, chimney work and lead flashing
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
-                    Call to discuss the painting work you need.
+                    Call to discuss the roofing work you need.
                   </p>
                   <div className="flex items-center gap-2 text-13 font-body text-forest">
                     <span className="w-2 h-2 rounded-full bg-forest animate-pulse" />

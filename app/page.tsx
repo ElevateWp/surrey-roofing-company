@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Roofing services in Nelson Bay, New South Wales',
+  title: 'Roofing services in Croydon, United Kingdom',
   description:
-    'Priceys Roof Painting provides roof restoration, painting, repairs and cleaning. Call +61 434 242 175.',
+    'The Surrey Roofing Company provides roof repairs, chimney work and roof restoration. Call +44 7729 174423.',
   pathname: '/',
 });
 
@@ -55,10 +55,10 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why Choose Priceys Roof Painting */}
+      {/* SECTION 4: Why Choose The Surrey Roofing Company */}
       <HomeWhyUs />
 
-      {/* SECTION 5: Meet Our team */}
+      {/* SECTION 5: Meet Meet the team */}
       <HomeDentists />
 
       {/* SECTION 6: Services em destaque */}

@@ -83,9 +83,9 @@ export default function BookingForm() {
 
         <div className="p-6 bg-paper/10 border border-mist/20 mb-8 space-y-2 font-body text-15">
           <div className="flex justify-between">
-            <span className="text-paper/60">Painting service:</span>
+            <span className="text-paper/60">Roofing service:</span>
             <span className="text-paper font-medium">
-              {formData.service === 'other-painting' ? 'Other painting work' : SERVICES.find((s) => s.slug === formData.service)?.name || formData.service}
+              {formData.service === 'other-roofing' ? 'Other roofing work' : SERVICES.find((s) => s.slug === formData.service)?.name || formData.service}
             </span>
           </div>
           <div className="flex justify-between">
@@ -140,7 +140,7 @@ export default function BookingForm() {
           Request a quote
         </h3>
         <p className="font-body text-15 text-forest-ink/70">
-          Tell us about your project. Our team will contact you to discuss the work and next steps.
+          Tell us about your project. Meet the team will contact you to discuss the work and next steps.
         </p>
       </div>
 
@@ -162,7 +162,7 @@ export default function BookingForm() {
           required
         />
         {errors.fullName && (
-          <span className="font-body text-13 text-[#666666] transition-all duration-200">
+          <span className="font-body text-13 text-[#6B625B] transition-all duration-200">
             {errors.fullName}
           </span>
         )}
@@ -182,18 +182,18 @@ export default function BookingForm() {
               setFormData({ ...formData, phone: e.target.value });
               if (errors.phone) setErrors({ ...errors, phone: undefined });
             }}
-            placeholder="+61 434 242 175"
+            placeholder="+44 7729 174423"
             className="w-full px-4 py-3 text-15 focus:border-forest transition-colors"
             required
           />
           {errors.phone && (
-            <span className="font-body text-13 text-[#666666]">{errors.phone}</span>
+            <span className="font-body text-13 text-[#6B625B]">{errors.phone}</span>
           )}
         </div>
 
         <div className="flex flex-col space-y-1.5">
           <label htmlFor="email" className="font-body text-13 text-forest-ink/70">
-            Address de e-mail <span className="text-forest">*</span>
+            Email address <span className="text-forest">*</span>
           </label>
           <input
             id="email"
@@ -208,7 +208,7 @@ export default function BookingForm() {
             required
           />
           {errors.email && (
-            <span className="font-body text-13 text-[#666666]">{errors.email}</span>
+            <span className="font-body text-13 text-[#6B625B]">{errors.email}</span>
           )}
         </div>
       </div>
@@ -216,7 +216,7 @@ export default function BookingForm() {
       {/* Service Selection */}
       <div className="flex flex-col space-y-1.5">
         <label htmlFor="service" className="font-body text-13 text-forest-ink/70">
-          Painting service <span className="text-forest">*</span>
+          Roofing service <span className="text-forest">*</span>
         </label>
         <select
           id="service"
@@ -229,7 +229,7 @@ export default function BookingForm() {
               {s.name}
             </option>
           ))}
-          <option value="other-painting">Other painting work</option>
+          <option value="other-roofing">Other roofing work</option>
         </select>
       </div>
 
@@ -252,7 +252,7 @@ export default function BookingForm() {
             required
           />
           {errors.preferredDate && (
-            <span className="font-body text-13 text-[#666666]">{errors.preferredDate}</span>
+            <span className="font-body text-13 text-[#6B625B]">{errors.preferredDate}</span>
           )}
         </div>
 

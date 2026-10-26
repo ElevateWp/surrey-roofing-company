@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: BlogPostProps): Promise<Metad
   if (!post) return {};
 
   return createMetadata({
-    title: `${post.title} | Painting advice`,
+    title: `${post.title} | Roofing advice`,
     description: post.excerpt,
     pathname: `/dicas/${post.slug}/`,
     image: post.leadImage,
@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'Equipe Priceys Roof Painting',
+      name: author?.name || 'Equipe The Surrey Roofing Company',
     },
     publisher: {
       '@type': 'Organization',
@@ -86,7 +86,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'Painting advice', path: '/dicas/' },
+              { name: 'Roofing advice', path: '/dicas/' },
               { name: post.category, path: '/dicas/' },
               { name: post.title, path: `/dicas/${post.slug}/` },
             ]}
@@ -223,7 +223,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
           <AnimateOnScroll animation="fade-right" duration={0.8}>
             <div>
               <span className="font-body text-13 text-lime uppercase tracking-wider block mb-2 font-medium">
-                Painting advice
+                Roofing advice
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
                 Contact our team about your project

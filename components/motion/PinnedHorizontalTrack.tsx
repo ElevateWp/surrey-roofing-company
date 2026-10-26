@@ -113,7 +113,7 @@ export default function PinnedHorizontalTrack({
         <div className="flex items-center gap-4">
           <span className="font-body text-13 tabular-nums text-forest-ink">
             <span className="font-medium text-forest">{currentIndex}</span>
-            <span className="text-forest-ink/40"> de </span>
+            <span className="text-forest-ink/40"> of </span>
             <span>{items.length}</span>
           </span>
           <div className="w-24 sm:w-32 h-[2px] bg-mist relative overflow-hidden hidden sm:block">
@@ -214,7 +214,7 @@ export default function PinnedHorizontalTrack({
       </div>
 
       {/* Mobile swipe hint — only visible on mobile */}
-      <div className="flex lg:hidden justify-center mt-4 gap-1.5 px-6" role="group" aria-label="Escolha um service">
+      <div className="flex lg:hidden justify-center mt-4 gap-1.5 px-6" role="group" aria-label="Choose a service">
         {items.map((item, idx) => (
           <button
             key={item.id}
@@ -233,7 +233,7 @@ export default function PinnedHorizontalTrack({
               setCurrentIndex(idx + 1);
             }}
             className={`h-3 rounded-full transition-all focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest ${
-              idx === currentIndex - 1 ? 'bg-[#171717] w-4' : 'bg-[#DCDCDC] w-3'
+              idx === currentIndex - 1 ? 'bg-[#252122] w-4' : 'bg-[#E5DCCB] w-3'
             }`}
           />
         ))}

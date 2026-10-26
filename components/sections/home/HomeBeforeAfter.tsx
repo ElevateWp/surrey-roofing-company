@@ -36,19 +36,19 @@ export default function HomeBeforeAfter() {
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#171717]/85 text-white font-body text-12 px-3 py-1">
+                <span className="absolute bottom-3 left-3 bg-[#252122]/85 text-white font-body text-12 px-3 py-1">
                   Example project image
                 </span>
               </div>
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/roofb3-1.jpg"
-                  alt="Roof painting work"
+                  alt="Roof roofing work"
                   fill
                   sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <span className="absolute bottom-3 left-3 bg-[#171717]/85 text-white font-body text-12 px-3 py-1">
+                <span className="absolute bottom-3 left-3 bg-[#252122]/85 text-white font-body text-12 px-3 py-1">
                   Example project image
                 </span>
               </div>

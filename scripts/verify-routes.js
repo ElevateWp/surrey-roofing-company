@@ -5,7 +5,7 @@ const routes = [
   '/sobre/',
   '/avaliacoes/',
   '/equipe/',
-  '/equipe/nicholas-and-the-a-z-team/',
+  '/equipe/mark-surrey-roofing-company/',
   '/home-extensions/',
   '/loft-garage-conversions/',
   '/kitchens-bathrooms/',
@@ -15,7 +15,7 @@ const routes = [
   '/orcamento/',
   '/contato/',
   '/dicas/',
-  '/dicas/planning-a-home-extension/',
+  '/dicas/planning-roof-repairs/',
   '/robots.txt',
   '/sitemap.xml',
 ];

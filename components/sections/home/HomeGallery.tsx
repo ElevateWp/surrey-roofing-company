@@ -9,19 +9,19 @@ const GALLERY_IMAGES = [
       '/images/roof-with-tiles.png', '/images/roof-saffron-walden-1024x768-1.jpg', '/images/roofb3-1.jpg',
       '/images/roofing-hero.png', '/images/roof-with-tiles.png',
     ];
-    return { src: images[index % images.length], alt: 'Painter working on a home roof restoration' };
+    return { src: images[index % images.length], alt: 'Roof repairs at a residential property' };
   }),
 ];
 
 export default function HomeGallery() {
   return (
-    <section id="galeria-de-servicos" className="relative z-20 w-full bg-paper py-20 md:py-32 border-t border-mist overflow-hidden">
+    <section id="service-gallery" className="relative z-20 w-full bg-paper py-20 md:py-32 border-t border-mist overflow-hidden">
       <div className="max-w-site mx-auto px-6 md:px-12">
         <AnimateOnScroll animation="fade-up" duration={0.8} className="mb-16">
-          <span className="font-body text-13 text-[#222222] block mb-2 font-medium uppercase tracking-wider">
-            Priceys Roof Painting
+          <span className="font-body text-13 text-[#C99A45] block mb-2 font-medium uppercase tracking-wider">
+            The Surrey Roofing Company
           </span>
-          <h2 className="font-display text-33 md:text-41 text-[#171717]">Roofing services</h2>
+          <h2 className="font-display text-33 md:text-41 text-[#252122]">Roofing services</h2>
           <p className="mt-3 max-w-2xl font-body text-15 leading-relaxed text-forest-light">View roof restoration images and contact us to discuss your home.</p>
         </AnimateOnScroll>
 
@@ -31,7 +31,7 @@ export default function HomeGallery() {
               key={`${item.src}-${index}`}
               animation={index === 0 ? 'fade-right' : 'fade-down'}
               duration={0.85}
-              className={`${index === 0 ? 'md:col-span-5' : 'md:col-span-7'} min-h-[300px] md:min-h-[420px] relative bg-[#F5F5F5] overflow-hidden border border-[#DCDCDC] shadow-sm`}
+              className={`${index === 0 ? 'md:col-span-5' : 'md:col-span-7'} min-h-[300px] md:min-h-[420px] relative bg-[#F8F6F2] overflow-hidden border border-[#E5DCCB] shadow-sm`}
             >
               <MediaParallax speed={index === 0 ? 0.06 : 0.08} className="w-full h-full">
                 <Image
@@ -53,7 +53,7 @@ export default function HomeGallery() {
               animation="zoom-in"
               duration={0.8}
               delay={(index % 3) * 0.1}
-              className="aspect-[4/3] relative bg-[#F5F5F5] overflow-hidden border border-[#DCDCDC] shadow-sm"
+              className="aspect-[4/3] relative bg-[#F8F6F2] overflow-hidden border border-[#E5DCCB] shadow-sm"
             >
               <MediaParallax speed={0.05 + (index % 3) * 0.01} className="w-full h-full">
                 <Image

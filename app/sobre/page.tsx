@@ -14,17 +14,17 @@ import { CLINIC_INFO, DENTISTS } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About Priceys Roof Painting',
+  title: 'About The Surrey Roofing Company',
   description:
-    'Meet Priceys Roof Painting and learn about our roofing services.',
+    'Meet The Surrey Roofing Company and learn about our roofing services.',
   pathname: '/about/',
 });
 
 const TIMELINE = [
   {
-    year: 'Nelson Bay and surrounding areas',
+    year: 'Croydon and surrounding areas',
     title: 'Roofing services',
-    description: 'Priceys Roof Painting provides roof restoration and roof painting in Nelson Bay. Contact us to discuss your project.',
+    description: 'The Surrey Roofing Company provides roof repairs and restoration in Croydon. Contact us to discuss your project.',
   },
 ];
 
@@ -59,11 +59,11 @@ export default function AboutPage() {
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 font-medium uppercase tracking-wider">
-                  About Priceys Roof Painting
+                  About The Surrey Roofing Company
                 </span>
-                <WordRevealH1 text="Roof restoration and painting in Nelson Bay, NSW." />
+                <WordRevealH1 text="Roof repairs, chimney work and restoration in Croydon, United Kingdom." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Priceys Roof Painting provides roof restoration and roof painting in Nelson Bay. Customers highlight professional, tidy work and attention to detail." />
+                  <ScrubbedParagraph text="The Surrey Roofing Company provides roof repairs and restoration in Croydon. Customers highlight professional, tidy work and attention to detail." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <div className="flex justify-between border-b border-mist pb-2">
                     <span>Phone</span>
-                    <span className="font-medium text-forest">+61 434 242 175</span>
+                    <span className="font-medium text-forest">+44 7729 174423</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -161,17 +161,17 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Equipe Priceys Roof Painting */}
+      {/* SECTION 4: Equipe The Surrey Roofing Company */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
               <div>
                 <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                  Our team
+                  Meet the team
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  Meet Harley at Priceys Roof Painting
+                  Meet Mark at The Surrey Roofing Company
                 </h2>
               </div>
               <Link
@@ -201,19 +201,19 @@ export default function AboutPage() {
                   Our services
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink mb-6">
-                  Services para cuidar e renovar seu imóvel
+                  Roofing services for your property
                 </h2>
                 <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                  Our team discusses roof preparation, repairs, repointing and the finish you want for your property.
+                  Meet the team discusses roof preparation, repairs, repointing and the finish you want for your property.
                 </p>
                 <div className="space-y-2 font-body text-13 text-forest-ink/70">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-forest" />
-                    <span>O escopo e os detalhes do project são alinhados antes do início.</span>
+                    <span>We agree on the scope and details before work begins.</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-forest" />
-                    <span>Acabamento cuidadoso e atenção aos detalhes</span>
+                    <span>Careful finishing and attention to detail</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -266,7 +266,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Referência de service residencial
+                  Roofing project reference
                 </div>
               </div>
             </AnimateOnScroll>
@@ -274,7 +274,7 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/roof-saffron-walden-1024x768-1.jpg"
-                  alt="Painter applying a fresh coat of paint"
+                  alt="Roofer carrying out roof repairs"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
@@ -294,7 +294,7 @@ export default function AboutPage() {
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Reparo residencial
+                  Residential roofing
                 </div>
               </div>
             </AnimateOnScroll>
